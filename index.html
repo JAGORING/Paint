@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>Paint</title>
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<div class="paint-container">
+		<div class="paint-colume">
+			<h1>PAINT CANVAS</h1>
+			<div class="paint-row-container">
+				<!-- 펜 스타일 선택 -->
+				<div class="paint-pen">
+					<div class="pen">pen</div>
+					<div class="crayon">crayon</div>
+				</div>
+				<canvas id="paint" class="paint"></canvas>
+			</div>
+			<!-- 펜 굵기 설정 -->
+			<div class="setting-line-weight">
+				<input type="range" id="line-weight" min="1" max="20" value="2">
+			</div>
+			<!-- 펜의 색상 설정 -->
+			<div class="color-btn">
+				<button type="button" class="select-btn red" name="red"></button>
+				<button type="button" class="select-btn yellow" name="yellow"></button>
+				<button type="button" class="select-btn green" name="green"></button>
+				<button type="button" class="select-btn blue" name="blue"></button>
+				<button type="button" class="select-btn purple" name="purple"></button>
+				<button type="button" class="select-btn black" name="black"></button>
+				<button type="button" class="select-btn white" name="white"></button>
+				<input type="color" class="select-btn select">
+			</div>
+			<!--  -->
+			<div class="tool-btn">
+				<button type="button" class="select-tool all-fill-btn">FILL</button>
+				<button type="button" class="select-tool all-remove-btn">ALL REMOVE</button>
+				<button type="button" class="select-tool save-btn">SAVE</button>
+			</div>
+			
+			</div>
+
+	</div>
+</body>
+</html> 
